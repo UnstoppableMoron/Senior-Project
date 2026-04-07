@@ -31,3 +31,7 @@ class Enemy(Character):
     def __init__(self, name: str, health: int, weapon) -> None:
         super().__init__(name = name, health = health)
         self.weapon = weapon
+    
+    def equip(self, weapon) -> None:
+        self.weapon = weapon
+        print(f"{self.name} equipped {self.weapon.name}!")
