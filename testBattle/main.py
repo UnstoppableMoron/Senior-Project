@@ -6,23 +6,17 @@ class Weapon:
     def __init__(self, name: str, damage: int) -> None:
         self.name = name
         self.damage = damage
-d4 = Weapon(name = "d4", damage = random.randint(1, 4))
-d6 = Weapon(name = "d6", damage = random.randint(1, 6))
 
 hero = Hero(name = "Hero", health = 100)
-enemy = Enemy(name = "Enemy", health = 100)
+enemy = Enemy(name = "Enemy", health = 100, weapon = "d4")
 
-hero.equip(d6)
-enemy.equip(d4)
+hero.equip(iron_sword)
+enemy.equip(short_bow)
 
 while True:
     hero.attack(enemy)
     enemy.attack(hero)
-    d6 = Weapon(name = "d6", damage = random.randint(1, 6))
-    hero.equip(d6)
-    d4 = Weapon(name = "d4", damage = random.randint(1, 4))
-    enemy.equip(d4)
-
+    
     print(f"Health of {hero.name}: {hero.health}")
     print(f"Health of {enemy.name}: {enemy.health}")
 
