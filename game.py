@@ -1,0 +1,8 @@
+player = input("Welcome! What is your name? ")
+print("Perfect. Allow me to set the scene for you...")
+print("You and two other adventurers have been tasked with escorting a carriage")
+print("full of precious cargo, the likes of which cannot afford to be damaged.")
+print("You're about three days into your journey, with a couple more to go.")
+print("As you begin to settle down for the night, you hear a slight rustling in")
+print("a nearly bush. You stand between the camp and the bush, watching it warily, ")
+print("as two angry looking goblins jump out at you, brandishing rusty knives.")
