@@ -6,3 +6,7 @@ class Player:
         self.health = health
         self.health_max = health
         self.weapon = longsword 
+    
+    def equip(self, weapon) -> None:
+        self.weapon = weapon
+        print(f"{self.name} equipped {self.weapon.name}!")
