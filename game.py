@@ -1,4 +1,4 @@
-player = input("Welcome! What is your name? ")
+playerName = input("Welcome! What is your name? ")
 print("Perfect. Allow me to set the scene for you...")
 print("You and two other adventurers have been tasked with escorting a carriage")
 print("full of precious cargo, the likes of which cannot afford to be damaged.")
