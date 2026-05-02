@@ -3,22 +3,34 @@ from game import playerName
 
 class Player:
     def __init__(self, name: str, health: int):
-        self.name = playerName
-        self.health = 45
-        self.health_max = 45
-        self.weapon = longsword 
+        self.name = name
+        self.health = health
+        self.health_max = health
+        self.weapon = longsword
     
-    def equip(self, weapon) -> None:
+    def equip(self, weapon):
         self.weapon = weapon
         print(f"{self.name} equipped {self.weapon.name}!")
 
-    def attack(self, enemy):
-        enemy.health = enemy.health - Player.weapon.damage
+    def is_alive(self):
+        return self.health > 0
 
+    def attack(self, enemy):
+        damage = self.weapon.damage
+        enemy.health -= damage
+        print(f"{self.name} deals {damage} damage to {enemy.name}!")
 
 class Goblin:
     def __init__(self, name: str, health: int):
-        self.name = Goblin
-        self.health = 10
-        self.health_max = 10
+        self.name = name
+        self.health = health
+        self.health_max = health
         self.weapon = dagger
+
+    def is_alive(self):
+        return self.health > 0
+
+    def attack(self, enemy):
+        damage = self.weapon.damage
+        enemy.health -= damage
+        print(f"{self.name} hits {enemy.name} for {damage} damage!")

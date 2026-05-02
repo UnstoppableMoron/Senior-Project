@@ -1,5 +1,5 @@
 from charactersAndWeapons.weapons import longsword, dagger, warhammer, battleaxe, spear
-from charactersAndWeapons.playerAndEnemies import Player, Goblin, attack
+from charactersAndWeapons.playerAndEnemies import Player, Goblin
 
 def tutorialBattle():
     while True:
@@ -12,14 +12,37 @@ def tutorialBattle():
         print("Now, you can type 'attack', 'defend', or 'item' to determine what you do. ")
         print("You don't currently have any items, but you will soon enough. ")
         print("For now, just try attacking or defending. ")
-        print("\n\n")
-        print("The goblins plan to attack you.")
-        action = input("What do you do?")
+        print("\n")
 
-        if action.lower == "attack":
+        if action.lower() == "attack":
             attack(Player, Goblin)
-        
-        break
+        player = Player("Hero", 45)
+        enemy = Goblin("Goblin", 10)
+
+        print("The goblin plans to attack you.")
+
+        while player.is_alive() and enemy.is_alive():
+            action = input("What do you do? (attack/defend): ")
+
+        if action.lower() == "attack":
+            player.attack(enemy)
+
+            if enemy.is_alive():
+                enemy.attack(player)
+
+        elif action.lower() == "defend":
+            print("You brace for the attack! (not implemented yet)")
+
+        else:
+            print("Invalid action.")
+
+        print(f"{player.name}: {player.health} HP")
+        print(f"{enemy.name}: {enemy.health} HP")
+
+        if player.is_alive():
+            print("You win!")
+        else:
+            print("You lost...")
 
 
 tutorialBattle()
