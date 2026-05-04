@@ -17,7 +17,7 @@ def tutorialBattle():
         if action.lower() == "attack":
             attack(Player, Goblin)
         player = Player("Hero", 45)
-        enemy = Goblin("Goblin", 10)
+        enemy = Goblin("Goblin", 10, dagger)
 
         print("The goblin plans to attack you.")
 
@@ -31,7 +31,7 @@ def tutorialBattle():
                 enemy.attack(player)
 
         elif action.lower() == "defend":
-            print("You brace for the attack! (not implemented yet)")
+            print("You brace for the attack! ")
 
         else:
             print("Invalid action.")
@@ -43,6 +43,5 @@ def tutorialBattle():
             print("You win!")
         else:
             print("You lost...")
-
 
 tutorialBattle()

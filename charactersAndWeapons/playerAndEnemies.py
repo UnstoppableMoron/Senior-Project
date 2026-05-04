@@ -20,8 +20,8 @@ class Player:
         enemy.health -= damage
         print(f"{self.name} deals {damage} damage to {enemy.name}!")
 
-class Goblin:
-    def __init__(self, name: str, health: int):
+class enemy:
+    def __init__(self, name: str, health: int, weapon: str):
         self.name = name
         self.health = health
         self.health_max = health
@@ -30,7 +30,7 @@ class Goblin:
     def is_alive(self):
         return self.health > 0
 
-    def attack(self, enemy):
+    def attack(self, Player):
         damage = self.weapon.damage
-        enemy.health -= damage
-        print(f"{self.name} hits {enemy.name} for {damage} damage!")
+        Player.health -= damage
+        print(f"{self.name} hits {Player.name} for {damage} damage!")
