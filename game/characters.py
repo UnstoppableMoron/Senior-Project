@@ -53,7 +53,7 @@ class Enemy(Character):
 
 # Specific enemy classes
 goblin = Enemy(name = "Goblin", hp = 40, attack = 15, defense = 5, moves = ["attack", "attack", "defend"])
-goblin1 = Enemy(name = "Goblin 1", hp = 55, attack = 11, defense = 13, moves = ["defend", "defend", "defend"])
+goblin1 = Enemy(name = "Large Goblin", hp = 55, attack = 11, defense = 13, moves = ["defend", "defend", "defend"])
 goblin2 = Enemy(name = "Goblin 2", hp = 30, attack = 18, defense = 8, moves = ["defend", "attack", "attack"])
 goblin3 = Enemy(name = "Goblin 3", hp = 40, attack = 13, defense = 7, moves = ["attack", "attack", "defend"])
 orc = Enemy(name = "Orc", hp = 80, attack = 24, defense = 8, moves = ["attack", "attack", "heavyAttack", "stun"])

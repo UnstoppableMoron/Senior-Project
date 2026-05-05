@@ -1,4 +1,6 @@
 # Helper functions
+
+# Combat functions
 def choose_action():
     print("What do you do?")
     print("1. Attack")
@@ -16,3 +18,12 @@ def describe_intent(enemy):
         print(f"{enemy.name} winds up for a powerful strike!")
     elif move == "stun":
         print(f"{enemy.name} is stunned!")
+
+# World functions
+
+# Intro goblin choice
+def goblin_action():
+    print("What do you do?")
+    print("1. Continue on")
+    print("2. Follow the goblin")
+    goblin_choice = input("> ")

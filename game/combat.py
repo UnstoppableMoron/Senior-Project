@@ -22,19 +22,19 @@ def attack(attacker, defender):
 def ability_menu(player, enemy):
     while True:
         print("\n===== ABILITIES =====")
-        print("1. Break Guard Strike")
+        print("1. Shield Shatter")
         print("0. Back")
 
         choice = input("> ")
 
         if choice == "1":
-            if player.cooldowns.get("break_guard", 0) > 0:
+            if player.cooldowns.get("shieldShatter", 0) > 0:
                 print("Ability is on cooldown!")
                 return
 
             shieldShatter(player, enemy)
 
-            player.cooldowns["break_guard"] = 3
+            player.cooldowns["shieldShatter"] = 3
             return
 
         elif choice == "0":
