@@ -1,9 +1,8 @@
-from charactersAndWeapons.weapons import longsword, dagger, warhammer, battleaxe, spear
-from charactersAndWeapons.playerAndEnemies import Player, Goblin
+from weapons import longsword, dagger, warhammer, battleaxe, spear
+from playerAndEnemies import Player, enemy, attack
 
 def tutorialBattle():
     while True:
-        enemy = Goblin
         print("Combat in this world is simple. You will be able to see the actions an enemy will take, ")
         print("and will be given the option to attack, defend, or use an item, if applicable.")
         print("Enemies may simply attack or defend, but they may also use an item or attempt to ")
@@ -15,9 +14,9 @@ def tutorialBattle():
         print("\n")
 
         if action.lower() == "attack":
-            attack(Player, Goblin)
+            attack(Player, enemy)
         player = Player("Hero", 45)
-        enemy = Goblin("Goblin", 10, dagger)
+        enemy = enemy("Goblin", 10, dagger)
 
         print("The goblin plans to attack you.")
 
