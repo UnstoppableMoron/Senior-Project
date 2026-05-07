@@ -26,4 +26,4 @@ def goblin_action():
     print("What do you do?")
     print("1. Continue on")
     print("2. Follow the goblin")
-    goblin_choice = input("> ")
+    return input("> ")

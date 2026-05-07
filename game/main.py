@@ -1,8 +1,8 @@
-import time, builtins
+import time, builtins, json
 from characters import Player, Enemy, goblin, goblin1
 from combat import combat
-from utilities import goblin_action, goblin_choice
-from options import goblin_choice_1, goblin_choice_2
+from utilities import goblin_action
+# from options import goblin_choice_1, goblin_choice_2
 
 # Typewriter effect
 # def slow_print(*args, delay=0.02, sep=' ', end='\n', flush=True):
@@ -15,13 +15,7 @@ from options import goblin_choice_1, goblin_choice_2
 
 def gameLoop():
     playerName = input("Before we can begin, what is your name? ")
-    print("Perfect. Allow me to set the scene for you...")
-    print("You and two other adventurers have been tasked with escorting a carriage")
-    print("containing two crates of a precious cargo, the likes of which cannot")
-    print("afford to be damaged. You're about three days into your journey, with a couple")
-    print("more to go. As you begin to settle down for the night, you hear a slight rustling")
-    print("in a nearly bush. You stand between the camp and the bush, watching it warily, ")
-    print("as an angry looking goblin jumps out at you, brandishing a rusty knife.")
+    
 
     player = Player(playerName)
     combat(player, goblin)
@@ -48,11 +42,11 @@ def gameLoop():
             player.cooldowns[ability] = max(0, player.cooldowns[ability] - 999)
 
     print("\n\nAfter taking out the goblin, you look around frantically, but to no avail.\nThe goblin that stole one of your crates is nowhere to be seen. If you continue to your\ndestination without it, you risk not being paid for your efforts, but following the\ngoblin may result in your untimely death.")
-    goblin_action() # Move this to options.py and make the import work somefuckinghow
+    goblin_choice = goblin_action() # Move this to options.py and make the import work somefuckinghow
     if goblin_choice == "1":
-        goblin_choice_1()
+        print("After instructing your companions to watch the carriage, you run off in\nthe direction of the goblin. After several minutes of running, you find a small camp of\n goblins, seemingly lead by an orc. You don't stand much chance given the current circumstances,\n but your companions may be able to help you. On the other hand, if you can manage\n to get the drop on the orc somehow, you may be able to get this done yourself.")
     elif goblin_choice == "2":
-        goblin_choice_2()
+        print("You continue on to your destination, the town with a cool name that I'll think of later.\nYou make it there after a couple days, and follow the address you were given to the workshop\n of the prestigious artificer Toralf. He welcomes your arrival, and is willing to forget the issue of the\nmissing crate. He pays you for your efforts, and you leave him to his creations. As you walk back out into town,\n you ")
             
 if __name__ == "__main__":
     gameLoop()

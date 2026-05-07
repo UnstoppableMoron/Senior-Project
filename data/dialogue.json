@@ -1,0 +1,15 @@
+{
+"gameStart": {
+    "intro": "Perfect. Allow me to set the scene for you...\n\nYou and two other adventurers have been tasked with escorting a carriage containing two crates of a precious cargo,\nthe likes of which cannot afford to be damaged. You're about three days into your journey, with a couple more to go.\nAs you begin to settle down for the night, you hear a slight rustling in a nearly bush. You stand betweenthe camp and the bush,\nwatching it warily, as an angry looking goblin jumps out at you, brandishing a rusty knife."
+},
+
+"elder": {
+    "greeting": "Welcome to our village.",
+    "quest": "Please defeat the goblins in the forest."
+},
+
+"merchant": {
+    "greeting": "Looking to buy something?"
+}
+
+}
