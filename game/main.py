@@ -12,10 +12,12 @@ from utilities import goblin_action
 #         time.sleep(delay)
 
 # print = slow_print
+with open("data/dialogue.json", "r") as file:
+    data = json.load(file)
 
 def gameLoop():
     playerName = input("Before we can begin, what is your name? ")
-    
+    print(data["gameStart"]["intro"])
 
     player = Player(playerName)
     combat(player, goblin)
@@ -24,12 +26,7 @@ def gameLoop():
 
     player.hp = 100
     
-    print("\n\nThe goblin goes down without much fight, but it makes you wonder why it")
-    print("might have attacked you alone, and whether there are more lurking about.")
-    print("As you hear a frantic rustling from behind you, you turn around just in time to")
-    print("witness an abnormally large goblin making off with a crate of your precious cargo.")
-    print("You try to chase it down, but are intercepted by another goblin,")
-    print("this one also significantly larger than normal.")
+    print(data["combatIntro2"]["intro"])
 
     player = Player(playerName)
     combat(player, goblin1)
@@ -40,13 +37,14 @@ def gameLoop():
 
     for ability in list(player.cooldowns.keys()):
             player.cooldowns[ability] = max(0, player.cooldowns[ability] - 999)
+            
+    print(data["goblinChoicePrompt"]["choice"])
 
-    print("\n\nAfter taking out the goblin, you look around frantically, but to no avail.\nThe goblin that stole one of your crates is nowhere to be seen. If you continue to your\ndestination without it, you risk not being paid for your efforts, but following the\ngoblin may result in your untimely death.")
     goblin_choice = goblin_action() # Move this to options.py and make the import work somefuckinghow
     if goblin_choice == "1":
-        print("After instructing your companions to watch the carriage, you run off in\nthe direction of the goblin. After several minutes of running, you find a small camp of\n goblins, seemingly lead by an orc. You don't stand much chance given the current circumstances,\n but your companions may be able to help you. On the other hand, if you can manage\n to get the drop on the orc somehow, you may be able to get this done yourself.")
+        print(data["goblinChoice1"]["choice1"])
     elif goblin_choice == "2":
-        print("You continue on to your destination, the town with a cool name that I'll think of later.\nYou make it there after a couple days, and follow the address you were given to the workshop\n of the prestigious artificer Toralf. He welcomes your arrival, and is willing to forget the issue of the\nmissing crate. He pays you for your efforts, and you leave him to his creations. As you walk back out into town,\n you ")
+        print(data["goblinChoice2"]["choice2"])
             
 if __name__ == "__main__":
     gameLoop()
