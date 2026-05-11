@@ -22,7 +22,7 @@ def describe_intent(enemy):
 # World functions
 
 # Intro goblin choice
-def goblin_action():
+def goblin_choice():
     print("What do you do?")
     print("1. Continue on")
     print("2. Follow the goblin")
@@ -32,5 +32,5 @@ def town_choice():
     print("What do you check out first?")
     print("1. Go to the tavern")
     print("2. Go to the store")
-    print("3. Look at the wanted poster")
+    print("3. Look at the billboard")
     return input("> ")

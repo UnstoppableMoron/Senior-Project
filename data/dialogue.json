@@ -1,23 +1,29 @@
 {
 "gameStart": {
-    "intro": "Perfect. Allow me to set the scene for you...\n\nYou and two other adventurers have been tasked with escorting a carriage containing two crates of a precious cargo,\nthe likes of which cannot afford to be damaged. You're about three days into your journey, with a couple more to go.\nAs you begin to settle down for the night, you hear a slight rustling in a nearly bush. You stand betweenthe camp and the bush,\nwatching it warily, as an angry looking goblin jumps out at you, brandishing a rusty knife."
+    "intro": "\nPerfect. Allow me to set the scene for you...\n\nYou and two other adventurers have been tasked with escorting a carriage containing two crates of a precious cargo,\nthe likes of which cannot afford to be damaged. You're about three days into your journey, with a couple more to go.\nAs you begin to settle down for the night, you hear a slight rustling in a nearly bush. You stand betweenthe camp and the bush,\nwatching it warily, as an angry looking goblin jumps out at you, brandishing a rusty knife."
 },
 
 "combatIntro2": {
     "intro": "\nThe goblin goes down without much fight, but it makes you wonder why it might have\nattacked you alone, and whether there are more lurking about.\nAs you hear a frantic rustling from behind you, you turn around just in time to\nwitness an abnormally large goblin making off with a crate of your precious cargo.\nYou try to chase it down, but are intercepted by another goblin,\nthis one also significantly larger than normal."
 },
 
-"goblinChoicePrompt": {
-    "choice": "\nAfter taking out the goblin, you look around frantically, but to no avail.\nThe goblin that stole one of your crates is nowhere to be seen. If you continue to your\ndestination without it, you risk not being paid for your efforts, but following the\ngoblin may result in your untimely death."
+"goblinChoice": {
+    "prompt": "\nAfter taking out the goblin, you look around frantically, but to no avail.\nThe goblin that stole one of your crates is nowhere to be seen. If you continue to your\ndestination without it, you risk not being paid for your efforts, but following the\ngoblin may result in your untimely death.",
+
+    "choice1": "\nAfter instructing your companions to watch the carriage, you run off in\nthe direction of the goblin. After several minutes of running, you find a small camp of\n goblins, seemingly lead by an orc. You don't stand much chance given the current circumstances,\n but your companions may be able to help you. On the other hand, if you can manage\n to get the drop on the orc somehow, you may be able to get this done yourself.",
+    
+    "choice2": "\nYou continue on to your destination, the town of {TOWN NAME}.\nYou make it there after a couple days, and follow the address you were given to the workshop\n of the prestigious artificer Toralf. He welcomes your arrival, and is willing to forget the issue of the\nmissing crate. He pays you the agreed 80 gold coins for your efforts, and you leave him to his creations."
 },
 
-"goblinChoice1": {
-    "choice1": "After instructing your companions to watch the carriage, you run off in\nthe direction of the goblin. After several minutes of running, you find a small camp of\n goblins, seemingly lead by an orc. You don't stand much chance given the current circumstances,\n but your companions may be able to help you. On the other hand, if you can manage\n to get the drop on the orc somehow, you may be able to get this done yourself."
+"townChoice": {
+    "prompt": "\nAs you walk back out into town, you start looking around for some more work. After a quick\nglance around the town square, you notice a tavern, a store advertising various\nmagical and non-magical trinkets, and a billboard showcasing several different wanted posters.",
+
+    "choice1": "\nAs you walk into the {TAVERN NAME}, you notice a few things. The bar sits on the opposite\nside of the room, with an energetic dwarven bartender enthusiastically\nserving customers, a crowded table to your left is making a lot of noise,\nbut you can't quite see why, and there are a few other less crowded tables\nof people eating food, drinking, or just chatting.",
+
+    "choice2": "\nThe {STORE NAME} is empty except for an exotic looking shopkeeper, with a colorful and flashy outfit that has to have taken months to make. 'Gooood afternoon! What can I get for ya? You look like an adventurer of some kind, am I right? I bet I'm right! Maybe one of these nifty little things will do the trick!' He gestures towards a shelf holding a few different strange looking items, each presumably with their own magical oddities. following his gaze, you see a sword sheath of some kind, "
 },
 
-"goblinChoice2": {
-    "choice2": "You continue on to your destination, the town with a cool name that I'll think of later.\nYou make it there after a couple days, and follow the address you were given to the workshop\n of the prestigious artificer Toralf. He welcomes your arrival, and is willing to forget the issue of the\nmissing crate. He pays you the agreed 80 gold coins for your efforts, and you leave him to his creations. As you walk back\n out into town, you start looking around for some more work. After a quick glance around\nthe town square, you notice a tavern, a store advertising various magical and\nnon-magical trinkets, and a billboard showcasing several different wanted posters."
-},
+
 
 "elder": {
     "greeting": "Welcome to our village.",

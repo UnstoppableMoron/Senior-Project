@@ -1,8 +1,7 @@
 import time, builtins, json
 from characters import Player, Enemy, goblin, goblin1
 from combat import combat
-from utilities import goblin_action
-# from options import goblin_choice_1, goblin_choice_2
+from utilities import goblin_choice, town_choice
 
 # Typewriter effect
 # def slow_print(*args, delay=0.02, sep=' ', end='\n', flush=True):
@@ -16,9 +15,13 @@ with open("data/dialogue.json", "r") as file:
     data = json.load(file)
 
 def gameLoop():
+
+    # Intro
     playerName = input("Before we can begin, what is your name? ")
     print(data["gameStart"]["intro"])
 
+    # First tutorial combat 
+    # Remember to add tutorial text prompts here
     player = Player(playerName)
     combat(player, goblin)
     if not player.is_alive():
@@ -26,6 +29,8 @@ def gameLoop():
 
     player.hp = 100
     
+    # Second tutorial combat
+    # Remember to add tutorial text prompts here
     print(data["combatIntro2"]["intro"])
 
     player = Player(playerName)
@@ -38,13 +43,25 @@ def gameLoop():
     for ability in list(player.cooldowns.keys()):
             player.cooldowns[ability] = max(0, player.cooldowns[ability] - 999)
             
-    print(data["goblinChoicePrompt"]["choice"])
+    # Goblin choice
+    print(data["goblinChoice"]["prompt"])
 
-    goblin_choice = goblin_action() # Move this to options.py and make the import work somefuckinghow
-    if goblin_choice == "1":
-        print(data["goblinChoice1"]["choice1"])
-    elif goblin_choice == "2":
-        print(data["goblinChoice2"]["choice2"])
+    goblin_option = goblin_choice()
+    if goblin_option == "1":
+        print(data["goblinChoice"]["choice1"])
+    elif goblin_option == "2":
+        print(data["goblinChoice"]["choice2"])
+
+    # Town choice
+    print(data["townChoice"]["prompt"])
+    town_option = town_choice()
+    if town_option == "1":
+        print("tavern")
+    elif town_option == "1":
+        print("store")
+    elif town_option == "1":
+        print("billboard")
+
             
 if __name__ == "__main__":
     gameLoop()
