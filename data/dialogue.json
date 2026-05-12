@@ -16,11 +16,13 @@
 },
 
 "townChoice": {
-    "prompt": "\nAs you walk back out into town, you start looking around for some more work. After a quick\nglance around the town square, you notice a tavern, a store advertising various\nmagical and non-magical trinkets, and a billboard showcasing several different wanted posters.",
+    "prompt": "\nAs you walk back out into town, you start looking around for some more work. After a quick\nglance around the town square, you notice a tavern, a store advertising various\nmagical and non-magical trinkets and gear, and a billboard showcasing a few different pieces of paper, one of which being a wanted poster.",
 
     "choice1": "\nAs you walk into the {TAVERN NAME}, you notice a few things. The bar sits on the opposite\nside of the room, with an energetic dwarven bartender enthusiastically\nserving customers, a crowded table to your left is making a lot of noise,\nbut you can't quite see why, and there are a few other less crowded tables\nof people eating food, drinking, or just chatting.",
 
-    "choice2": "\nThe {STORE NAME} is empty except for an exotic looking shopkeeper, with a colorful and flashy outfit that has to have taken months to make. 'Gooood afternoon! What can I get for ya? You look like an adventurer of some kind, am I right? I bet I'm right! Maybe one of these nifty little things will do the trick!' He gestures towards a shelf holding a few different strange looking items, each presumably with their own magical oddities. following his gaze, you see a sword sheath of some kind, "
+    "choice2": "\nThe {STORE NAME} is empty except for an exotic looking shopkeeper, with a colorful\nand flashy outfit that has to have taken months to make.\n\n'Gooood afternoon!What can I get for ya? You look like an adventurer of some kind,\nam I right? I bet I'm right! Maybe one of these nifty little things will do the trick!'\n\nHe gestures towards a shelf holding a few different strange lookingitems, each presumably\nwith their own magical oddities. following his gaze, you see a sword sheath\nof some kind, a small purple glowing stone, and a ring with some sort of symbol\non it, which you can't quite make out from here.\n\n'Now, I don't actually know what any of these things do, as I don't exactly have\nhe time to test them, unfortunately. HOWever, to compensate for that, I can offer you\na 30% discount on any of them! How's that sound?'\n\nWith the gold you got from Toralf, you can only afford to buy one of these\nitems at most,but you get the feeling that they'll be of some help to you in the future.",
+
+    "choice3": "\nThe billboard contains a few different wanted posters, a calendar, and a letter signed by the mayor, seemingly needing help with something. The wanted poster shows a rough sketch of a notorious pirate captain, Luigi Vampa, with a massive bounty of 3000 gold on his head. The poster reads: \n\n WANTED DEAD OR ALIVE\nLUIGI VAMPA\nFOR THE CRIMES OF GRAND LARCENY, MURDER, AND KIDNAPPING\nBEWARE, HIM AND HIS CREW ARE VERY DANGEROUS\nEXERCISE EXTREME CAUTION IF ENCOUNTERED\nREWARD FOR PROOF OF DEATH: 3000 GOLD COINS\n\n"
 },
 
 

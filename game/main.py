@@ -56,11 +56,11 @@ def gameLoop():
     print(data["townChoice"]["prompt"])
     town_option = town_choice()
     if town_option == "1":
-        print("tavern")
+        print(data["townChoice"]["choice1"])
     elif town_option == "1":
-        print("store")
+        print(data["townChoice"]["choice2"])
     elif town_option == "1":
-        print("billboard")
+        print(data["townChoice"]["choice3"])
 
             
 if __name__ == "__main__":
