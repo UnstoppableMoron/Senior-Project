@@ -24,8 +24,8 @@ def describe_intent(enemy):
 # Intro goblin choice
 def goblin_choice():
     print("What do you do?")
-    print("1. Continue on")
-    print("2. Follow the goblin")
+    print("1. Follow the goblin")
+    print("2. Continue on")
     return input("> ")
 
 def town_choice():

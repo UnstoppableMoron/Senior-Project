@@ -49,6 +49,7 @@ def gameLoop():
     goblin_option = goblin_choice()
     if goblin_option == "1":
         print(data["goblinChoice"]["choice1"])
+        print(data["goblinCampChoice"]["prompt"])
     elif goblin_option == "2":
         print(data["goblinChoice"]["choice2"])
 
@@ -57,9 +58,9 @@ def gameLoop():
     town_option = town_choice()
     if town_option == "1":
         print(data["townChoice"]["choice1"])
-    elif town_option == "1":
+    elif town_option == "2":
         print(data["townChoice"]["choice2"])
-    elif town_option == "1":
+    elif town_option == "3":
         print(data["townChoice"]["choice3"])
 
             
