@@ -1,6 +1,6 @@
 {
 "gameStart": {
-    "intro": "\nPerfect. Allow me to set the scene for you...\n\nYou and two other adventurers have been tasked with escorting a carriage containing two crates of a precious cargo,\nthe likes of which cannot afford to be damaged. You're about three days into your journey, with a couple more to go.\nAs you begin to settle down for the night, you hear a slight rustling in a nearly bush. You stand betweenthe camp and the bush,\nwatching it warily, as an angry looking goblin jumps out at you, brandishing a rusty knife."
+    "intro": "\nPerfect. Allow me to set the scene for you...\n\nYou have been tasked with escorting a carriage containing two crates of a precious cargo\nto the coastal town of Solace. You're about three days into your journey, with a couple more to go.\nAs you begin to settle down for the night, you hear a slight rustling in a nearly bush. You stand betweenthe camp and the bush,\nwatching it warily, as an angry looking goblin jumps out at you, brandishing a rusty knife."
 },
 
 "combatIntro2": {
@@ -10,13 +10,17 @@
 "goblinChoice": {
     "prompt": "\nAfter taking out the goblin, you look around frantically, but to no avail.\nThe goblin that stole one of your crates is nowhere to be seen. If you continue to your\ndestination without it, you risk not being paid for your efforts, but following the\ngoblin may result in your untimely death.",
 
-    "choice1": "\nAfter instructing your companions to watch the carriage, you run off in\nthe direction of the goblin. After several minutes of running, you find a small camp of\ngoblins. There are four of them in total, plus an orc, seemingly listening to the goblin you were chasing.",
+    "choice1": "\nYou run off in the direction of the goblin. After several minutes of running,\nyou find a small camp of goblins. There arefour of them in total, plus an orc,\nseemingly listening to the goblin you were chasing.",
     
-    "choice2": "\nYou continue on to your destination, the town of {TOWN NAME}.\nYou make it there after a couple days, and follow the address you were given to the workshop\nof the prestigious artificer Toralf. He welcomes your arrival, and is willing to forget the issue of the\nmissing crate. He pays you the agreed 80 gold coins for your efforts, and you leave him to his creations."
+    "choice2": "\nYou continue on to your destination, the town of Solace. It's on the larger side, as far as towns go, with a few highly regarded inns and taverns, as well as the home of the prestigious craftsman Toralf\nYou make it there after a couple days, and follow the address you were given to the workshop\nof the Toralf. He welcomes your arrival, and is willing to forget the issue of the\nmissing crate. He pays you the agreed 80 gold coins for your efforts, and you leave him to his creations."
 },
 
 "goblinCampChoice": {
-    "prompt": "You don't stand much chance given the current circumstances, but your companions may be able to help you. On the other hand, if you can manage to get the drop on the orc somehow, you may be able to get this done yourself."
+    "prompt": "\nYou don't stand much chance given the current circumstances, so it may be worth\nbacking off and staying alive. On the other hand, if you can manage to get the\ndrop on the orc somehow, you may be able to get this done yourself.\n Quickly scouring the area, you notice a few dense trees near the camp, which you may be able to use to sneak up on the orc.",
+
+    "choice1": "You decide to play it safe, and make your way back to the carriage. After another minute or two, you're continuing on your way to Solace.",
+
+    "choice2": "You manage to sneak over to and climb one of the trees, "
 },
 
 
