@@ -12,6 +12,11 @@ goblin_option = goblin_choice()
 if goblin_option == "1":
     print(data["goblinChoice"]["choice1"])
     print(data["goblinCampChoice"]["prompt"])
+    goblin_camp_option = goblin_camp_choice()
+    if goblin_camp_option == "1":
+        print(data["goblinCampChoice"]["choice1"])
+    elif goblin_camp_option == "2":
+        print(data["goblinCampChoice"]["choice2"])
 
 elif goblin_option == "2":
     print(data["goblinChoice"]["choice2"])

@@ -1,7 +1,7 @@
 import time, builtins, json
 from characters import Player, Enemy, goblin, goblin1
 from combat import combat
-from utilities import goblin_choice, goblin_camp_choice, town_choice
+from utilities import goblin_choice, goblin_camp_choice, town_choice, shop_choice
 
 # Typewriter effect
 # def slow_print(*args, delay=0.02, sep=' ', end='\n', flush=True):
@@ -66,13 +66,20 @@ def gameLoop():
     town_option = town_choice()
     if town_option == "1":
         print(data["townChoice"]["choice1"])
+
     elif town_option == "2":
         print(data["townChoice"]["choice2"])
+        shop_option = shop_choice()
+        if shop_option == "1":
+            print(data["shop"])
+
     elif town_option == "3":
         print(data["townChoice"]["choice3"])
 
             
 if __name__ == "__main__":
     gameLoop()
+
+
 
 # Shield Shatter doesn't fully work, and displaying of enemy intents is repeated multiple times. FIX IT FOR FUCKS SAKE
