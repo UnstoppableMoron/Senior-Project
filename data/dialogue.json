@@ -34,7 +34,7 @@
 },
 
 "shopChoice": {
-    "prompt": "\n"
+    "choice1": "\nYou "
 }
 
 }

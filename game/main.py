@@ -57,9 +57,9 @@ def gameLoop():
             print(data["goblinCampChoice"]["choice1"])
         elif goblin_camp_option == "2":
             print(data["goblinCampChoice"]["choice2"])
-            
     elif goblin_option == "2":
         print(data["goblinChoice"]["choice2"])
+        playerGold = 80
 
     # Town choice
     print(data["townChoice"]["prompt"])
@@ -67,11 +67,12 @@ def gameLoop():
     if town_option == "1":
         print(data["townChoice"]["choice1"])
 
+    # shop
     elif town_option == "2":
         print(data["townChoice"]["choice2"])
         shop_option = shop_choice()
         if shop_option == "1":
-            print(data["shop"])
+            print(data["shopChoice"])
 
     elif town_option == "3":
         print(data["townChoice"]["choice3"])
